@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.contenedor {
+    background: white;
+    max-width: 430px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.listado {
+    max-width: 1100px;
+    width: 95%;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.tabla-usuarios th {
+    background: #2563eb;
+    color: white;
+}
+
+.tabla-usuarios tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.tabla-usuarios tr:hover {
+    background: #e5edff;
+}
+
+
+/* Formularios de modificación y gestión */
+
+.contenedor {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+.contenedor h1 {
+    text-align: center;
+    color: #2563eb;
+}
+
+.contenedor label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contenedor input {
+    width: 100%;
+    padding: 11px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.contenedor button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.contenedor button:hover {
+    background: #1d4ed8;
+}
+
+.tabla-usuarios a {
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tabla-usuarios form {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.tabla-usuarios button {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tabla-usuarios button:hover {
+    background: #991b1b;
+}
+
+
+/* Mensaje de error del inicio de sesión */
+.mensaje-error {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    background-color: #fff1f2;
+    color: #be123c;
+    border: 1px solid #fecdd3;
+    border-left: 4px solid #e11d48;
+    border-radius: 10px;
+
+    padding: 15px 18px;
+    margin: 20px 0;
+
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.mensaje-error::before {
+    content: "!";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 22px;
+    height: 22px;
+    border: 2px solid #e11d48;
+    border-radius: 50%;
+
+    color: #e11d48;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Ancho específico para el inicio de sesión */
+.contenedor.login {
+    max-width: 430px;
+}
+/* Mensaje de registro exitoso */
+.mensaje-exito {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background-color: #f0fdf4;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+    border-left: 4px solid #16a34a;
+    border-radius: 10px;
+
+    padding: 15px 18px;
+    margin: 20px 0;
+
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+}
+
+.mensaje-exito::before {
+    content: "✓";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 22px;
+    height: 22px;
+    border: 2px solid #16a34a;
+    border-radius: 50%;
+
+    color: #16a34a;
+    font-weight: bold;
+}
+
